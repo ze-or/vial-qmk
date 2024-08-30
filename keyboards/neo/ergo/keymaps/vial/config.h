@@ -1,5 +1,5 @@
-/*
-Copyright 2021 sekigon-gonnoc
+/* 
+Copyright 2024 NEO
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,23 +17,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
+#define VIAL_KEYBOARD_UID {0x66, 0x43, 0x8B, 0x3D, 0xF4, 0xFE, 0x18, 0xBB}
+#define VIAL_UNLOCK_COMBO_ROWS {0, 0}
+#define VIAL_UNLOCK_COMBO_COLS {0, 1}
+#define NO_ALT_REPEAT_KEY
 
-#define MATRIX_ROW_PINS { GP11, GP10, GP1, GP0 }
-#define MATRIX_COL_PINS { GP7, GP6, GP5, GP4, GP3, GP2, GP28, GP27, GP26, GP25, GP24, GP23 }
 
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+/* WS2812 Underglow Matrix options */
+#ifdef RGBLIGHT_ENABLE
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#endif
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
 
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+/* WS2812 Underglow Matrix options */
+#ifdef RGB_MATRIX_ENABLE
+#define RGBLIGHT_LAYERS        // レイヤーとの連動機能の有効化
+#define RGBLIGHT_MAX_LAYERS 16  // 連動するレイヤー数(最大32)
 
-/* Bootmagic Lite key configuration */
-//#define BOOTMAGIC_LITE_ROW 0
-//#define BOOTMAGIC_LITE_COLUMN 0
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_KEYPRESSES
+
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#endif
