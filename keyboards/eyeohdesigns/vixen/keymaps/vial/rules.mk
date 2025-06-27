@@ -3,3 +3,4 @@ VIA_ENABLE = yes
 VIAL_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
 OS_DETECTION_ENABLE = yes
+DEBOUNCE_TYPE = asym_eager_defer_pk
