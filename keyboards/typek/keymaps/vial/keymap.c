@@ -63,28 +63,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     DF(0)  , KC_TAB , KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   ,          KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , KC_LBRC, KC_RBRC,
     DF(1)  , KC_LCTL, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   ,          KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, KC_QUOT, KC_DEL ,
     DF(2)  , KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   ,          KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, MO(7)  ,
-             KC_LGUI, KC_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , IME_TOG, MO(4)
+             KC_LGUI, KC_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , MO(4)  , KC_APP
 ),
 [1] = LAYOUT_all( /* Semimak */
     KC_ESC , KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,          KC_7   , KC_8   , KC_9   , KC_0   , KC_LBRC, KC_RBRC, KC_BSLS,
     DF(0)  , KC_TAB , KC_F   , KC_L   , KC_H   , KC_V   , KC_Z   ,          KC_Q   , KC_W   , KC_U   , KC_O   , KC_Y   , KC_SCLN, KC_EQL,
     DF(1)  , LM_LCTL, KC_S   , KC_R   , KC_N   , KC_T   , KC_K   ,          KC_C   , KC_D   , KC_E   , KC_A   , KC_I   , KC_MINS, KC_DEL ,
     DF(2)  , KC_LSFT, KC_X   , KC_QUOT, KC_B   , KC_M   , KC_J   ,          XXXXXXX, KC_P   , KC_G   , KC_COMM, KC_DOT , KC_SLSH, MO(7)  ,
-             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , IME_TOG, MO(4)
+             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , MO(4)  , KC_APP
 ),
 [2] = LAYOUT_all( /* TypeHacK */
     KC_ESC , KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,          KC_7   , KC_8   , KC_9   , KC_0   , KC_LBRC, KC_RBRC, KC_BSLS,
     DF(0)  , KC_TAB , KC_J   , KC_G   , KC_H   , KC_P   , KC_F   ,          KC_Q   , KC_V   , KC_O   , KC_U   , KC_SCLN, KC_SLSH, KC_EQL ,
     DF(1)  , LM_LCTL, KC_R   , KC_S   , KC_N   , KC_T   , KC_K   ,          KC_Y   , KC_I   , KC_A   , KC_E   , KC_L   , KC_MINS, KC_DEL ,
     DF(2)  , KC_LSFT, KC_Z   , KC_W   , KC_M   , KC_D   , KC_B   ,          XXXXXXX, KC_C   , KC_COMM, KC_QUOT, KC_DOT , KC_X   , MO(7)  ,
-             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , IME_TOG, MO(4)
+             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , MO(4)  , KC_APP
 ),
 [3] = LAYOUT_all( /* Colemak */
     KC_ESC , KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,          KC_7   , KC_8   , KC_9   , KC_0   , KC_MINS, KC_EQL , KC_BSLS,
     DF(0)  , KC_TAB , KC_Q   , KC_W   , KC_F   , KC_P   , KC_G   ,          KC_J   , KC_L   , KC_U   , KC_Y   , KC_SCLN, KC_LBRC, KC_RBRC,
     DF(1)  , LM_LCTL, KC_A   , KC_R   , KC_S   , KC_T   , KC_D   ,          KC_H   , KC_N   , KC_E   , KC_I   , KC_O   , KC_QUOT, KC_DEL ,
     DF(2)  , KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   ,          XXXXXXX, KC_K   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, MO(7)  ,
-             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , IME_TOG, MO(4)
+             LM_LGUI, LM_LALT,          KC_SPC , KC_BSPC, KC_6   ,          MO(6)  , QK_REP , KC_RSFT, KC_BSPC, KC_ENT , MO(4)  , KC_APP
 ),
 [4] = LAYOUT_all( /* QWERTY Mod Layer */
     _______, KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,          KC_7   , KC_8   , KC_9   , KC_0   , KC_MINS, KC_EQL , KC_BSLS,
@@ -119,6 +119,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______,
-             _______, _______,          _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______
+             _______, _______,          RGB_TOG, _______, _______,          _______, _______, _______, _______, _______, _______, _______
 ),
 };
